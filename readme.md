@@ -1,15 +1,8 @@
-# Laravel 5 package to redirect to last visited url on login
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/waavi/save-url.svg?style=flat-square)](https://packagist.org/packages/waavi/save-url)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/Waavi/save-url/master.svg?style=flat-square)](https://travis-ci.org/Waavi/save-url)
-[![Total Downloads](https://img.shields.io/packagist/dt/waavi/save-url.svg?style=flat-square)](https://packagist.org/packages/waavi/save-url)
+# Laravel 5: Save-URL
 
 ## Introduction
 
 This package allows you to easily redirect users to the last visited page on login.
-
-WAAVI is a web development studio based in Madrid, Spain. You can learn more about us at [waavi.com](http://waavi.com)
 
 ## Laravel compatibility
 
@@ -24,17 +17,13 @@ WAAVI is a web development studio based in Madrid, Spain. You can learn more abo
 
 Require through composer
 
-	composer require waavi/save-url 1.0.x
+	composer require maxweb/save-url 1.0.x
 
 Or manually edit your composer.json file:
 
 	"require": {
-		"waavi/save-url": "1.0.x"
+		"maxweb/save-url": "1.0.x"
 	}
-
-In config/app.php, add the following entry to the end of the providers array:
-
-	Waavi\SaveUrl\SaveUrlServiceProvider::class,
 
 Publish the configuration file:
 
@@ -53,7 +42,7 @@ By default, the last visited URL visited by a user is saved in Session. URLs mus
 If you want to exclude certain urls from the url cache, like for example the login and signup pages, you may use the provided "doNotSave" middleware:
 
 ```php
-// app/Http/routes.php
+// routes/web.php
 
 Route::get('/login', ['middleware' => 'doNotSave', 'uses' => 'AuthController@login']);
 ```

@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\SaveUrl;
+namespace Maxweb\SaveUrl;
 
 use Closure;
 use Illuminate\Http\Request;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\SaveUrl;
+namespace Maxweb\SaveUrl;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,8 +1,8 @@
 {
-    "name": "waavi/save-url",
+    "name": "maxweb/save-url",
     "description": "Laravel 5 package to redirect users to the last visited page on login.",
     "keywords": [
-        "waavi",
+        "maxweb",
         "laravel",
         "login",
         "save-url",
@@ -11,15 +11,15 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Waavi",
-            "email": "info@waavi.com",
-            "homepage": "http://waavi.com"
+            "name": "Ron Marsden",
+            "email": "ron.marsden@maxwebsolutions.co.uk",
+            "homepage": "https://maxwebsolutions.co.uk"
         }
     ],
     "require": {
-        "illuminate/support": "^5.1",
-        "illuminate/config": "^5.1",
-        "illuminate/session": "^5.1"
+        "illuminate/support": "^5.5",
+        "illuminate/config": "^5.5",
+        "illuminate/session": "^5.5"
     },
     "require-dev": {
         "phpunit/phpunit" : "^4",
@@ -28,18 +28,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Waavi\\SaveUrl\\": "src/"
+            "Maxweb\\SaveUrl\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Waavi\\SaveUrl\\Test\\": "tests"
+            "Maxweb\\SaveUrl\\Test\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Waavi\\SaveUrl\\SaveUrlServiceProvider"
+                "Maxweb\\SaveUrl\\SaveUrlServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\SaveUrl;
+namespace Maxweb\SaveUrl;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Routing\Redirector as LaravelRedirector;
