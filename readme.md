@@ -12,6 +12,7 @@ This package allows you to easily redirect users to the last visited page on log
  5.2.x    | 1.0.1 and up
  5.3.x    | 1.0.2 and up
  5.4.x    | 1.0.3 and up
+ 5.5.x    | 1.0.4 and up
 
 ## Installation
 
@@ -27,7 +28,9 @@ Or manually edit your composer.json file:
 
 Publish the configuration file:
 
-	php artisan vendor:publish --provider="Waavi\SaveUrl\SaveUrlServiceProvider"
+	php artisan vendor:publish
+
+This package supports Laravel 5.5's automatic package discovery feature, so there is no need to add anything to `config/app.php` in Laravel 5.5 and above.
 
 ## Usage
 
