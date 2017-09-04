@@ -40,11 +40,7 @@
         "laravel": {
             "providers": [
                 "Waavi\\SaveUrl\\SaveUrlServiceProvider"
-            ],
-            "aliases": {
-                "Form": "Collective\\Html\\FormFacade",
-                "Html": "Collective\\Html\\HtmlFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
